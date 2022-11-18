@@ -1,4 +1,4 @@
-package com.app.entidad;
+package com.app.web.entidad;
 
 import javax.persistence.*;
 
@@ -25,6 +25,12 @@ public class Estudiante {
 
     public Estudiante(Long id, String nombre, String apellido, String email) {
         this.id = id;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+    }
+
+    public Estudiante(String nombre, String apellido, String email) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
